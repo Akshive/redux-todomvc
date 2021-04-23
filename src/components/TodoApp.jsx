@@ -7,7 +7,7 @@ const TodoApp = (props) => {
   return (
     <div>
       <section className="todoapp">
-        <TodoList todos={items} />
+        <TodoList todos={items} filter={props.filter}/>
       </section>
     </div>
   );
