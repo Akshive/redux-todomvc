@@ -17,7 +17,7 @@ const TodoList = (props) => {
           <TodoItem
             key={item.get("text")}
             text={item.get("text")}
-            id={item.get('id')}
+            id={item.get("id")}
             isCompleted={isCompleted(item)}
             isEditing={item.get("editing")}
             toggleComplete={props.toggleComplete}
