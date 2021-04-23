@@ -4,7 +4,7 @@ module.exports = {
   entry: [
     "webpack-dev-server/client?http://localhost:8080", // URL for hot reload
     "webpack/hot/only-dev-server", // reload only the dev server
-    "./src/index.js",
+    "./src/index.jsx",
   ],
   module: {
     loaders: [
@@ -12,6 +12,10 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: "react-hot!babel",
+      },
+      {
+        test: /\.css$/,
+        loader: "style!css",
       },
     ],
   },
